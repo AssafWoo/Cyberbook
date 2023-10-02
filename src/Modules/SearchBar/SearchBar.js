@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { debounce } from "../../Utils/debounce";

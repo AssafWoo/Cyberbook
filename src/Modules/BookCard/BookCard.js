@@ -40,7 +40,7 @@ const BookCard = ({ book }) => {
         position: "bottom",
       });
     },
-    [title, toast]
+    [handleCloseModal, title, toast]
   );
 
   useEffect(() => {

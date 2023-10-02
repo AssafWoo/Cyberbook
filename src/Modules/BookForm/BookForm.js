@@ -4,13 +4,10 @@ import {
   Input,
   FormErrorMessage,
   Button,
-  Box,
-  Heading,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { MainPink } from "../../Styles/Colors";
 import { returnFields } from "./fields";
-import { useState } from "react";
 
 const BookForm = ({ onPurchase }) => {
   const {
@@ -18,7 +15,6 @@ const BookForm = ({ onPurchase }) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const [purchaseComplete, setPurchaseComplete] = useState(false);
 
   const onSubmit = (data) => {
     onPurchase(data);
